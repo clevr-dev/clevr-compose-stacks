@@ -1,0 +1,4 @@
+[submodule "traefik-stack"]
+	path = traefik-stack
+	url = https://github.com/clevr-dev/traefik-stack
+	branch = master
