@@ -1,0 +1,15 @@
+---
+version: "3.3"
+
+#
+# docker-compose -f image/docker-compose.build.yml build
+#
+
+services:
+  app:
+    image: ${APP_IMAGE}:${APP_IMAGE_TAG}
+    build:
+      dockerfile: Dockerfile
+      context: .
+      args:
+        SOURCE_IMAGE: containous/whoami:v1.5.0
